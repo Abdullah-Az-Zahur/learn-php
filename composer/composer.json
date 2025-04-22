@@ -1,0 +1,17 @@
+{
+    "name": "md.gias/composer",
+    "autoload": {
+        "psr-4": {
+            "MdGias\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abdullah-Az-Zahur",
+            "email": "abdullah.az.zahur@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "*"
+    }
+}
