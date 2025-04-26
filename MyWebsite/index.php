@@ -7,7 +7,9 @@
 </head>
 <body>
     <?php
-    echo "Hello World"
+    echo $_SERVER["DOCUMENT_ROOT"];
+    echo "<br>";
+    echo $_SERVER["PHP_SELF"];
     ?>
 </body>
 </html>
