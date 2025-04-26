@@ -10,6 +10,19 @@
     echo $_SERVER["DOCUMENT_ROOT"];
     echo "<br>";
     echo $_SERVER["PHP_SELF"];
+    echo "<br>";
+    echo $_SERVER["SERVER_NAME"];
+    echo "<br>";
+    echo $_SERVER["REQUEST_METHOD"];
+    echo "<br>";
+    // http://localhost:8080/index.php?name=gias
+    echo $_GET["name"];
+    echo "<br>";
+    echo $_REQUEST["name"];
+    echo "<br>";
+    $_SESSION["username"] = "Gias" ;
+    echo $_SESSION["username"];
+
     ?>
 </body>
 </html>
