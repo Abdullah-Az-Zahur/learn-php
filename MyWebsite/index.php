@@ -6,23 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    echo $_SERVER["DOCUMENT_ROOT"];
-    echo "<br>";
-    echo $_SERVER["PHP_SELF"];
-    echo "<br>";
-    echo $_SERVER["SERVER_NAME"];
-    echo "<br>";
-    echo $_SERVER["REQUEST_METHOD"];
-    echo "<br>";
-    // http://localhost:8080/index.php?name=gias
-    echo $_GET["name"];
-    echo "<br>";
-    echo $_REQUEST["name"];
-    echo "<br>";
-    $_SESSION["username"] = "Gias" ;
-    echo $_SESSION["username"];
+    <main>
+        <form action="includes/formhandler.php" method="post">
+            <label for="firstname">Firstname?</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname">
+            
+            <label for="lastname">Lastname?</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Laststname">
+            
+            <label for="favoritepet"favoritepet?</label>
+            <select name="favoritepet" id="favoritepet">
+                <option value="none">None</option>
+                <option value="dog">dog</option>
+                <option value="cat">cat</option>
+                <option value="bird">bird</option>
+            </select>
 
-    ?>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
 </body>
 </html>
