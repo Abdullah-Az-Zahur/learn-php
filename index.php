@@ -146,6 +146,7 @@
             $result = match ($a) {
                 1, 3, 5 => "variable a is equal to one!",
                 2 => "variable a is equal to two!",
+                default => "None were a match"
             };
 
             echo $result;
