@@ -12,6 +12,9 @@
         <?php
         $string = "Hello World";
         $number = -5.5;
+        $array1 = ["apple", "banana"];
+        $array2 = ["kiwi"];
+        $date = "2025-05-01 11:09:29";
 
         echo strlen($string);
         echo "<br>";
@@ -36,6 +39,14 @@
         echo sqrt(16);
         echo "<br>";
         echo rand(1, 100);
+        echo "<br>";
+        print_r(array_merge($array1, $array2));
+        echo "<br>";
+        echo date("Y-m-d H:i:s");
+        echo "<br>";
+        echo time();
+        echo "<br>";
+        echo strtotime($date);
         ?>
     </div>
 
