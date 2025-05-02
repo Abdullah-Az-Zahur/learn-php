@@ -24,6 +24,7 @@
 
     foreach ($fruits as $fruit => $color) {
         echo "This $fruit color is $color <br>";
+        
     }
 
     ?>
