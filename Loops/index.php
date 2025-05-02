@@ -20,10 +20,10 @@
         $test++;
     }
 
-    $fruits = ["Apple", "Banana", "Orange"];
+    $fruits = ["Apple" => "Red", "Banana" => "Yellow", "Orange" => "Orange"];
 
-    foreach ($fruits as $fruit) {
-        echo "$fruit <br>";
+    foreach ($fruits as $fruit => $color) {
+        echo "This $fruit color is $color <br>";
     }
 
     ?>
