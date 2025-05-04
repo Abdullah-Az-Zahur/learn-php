@@ -1,0 +1,29 @@
+INSERT INTO
+    users (username, pwd, email)
+VALUES
+    ('Gias', '123', 'gias@gmail.com');
+
+INSERT INTO
+    comments (username, comment_text, users_id)
+VALUES
+    ('Gias', 'comment1', 1);
+
+SELECT
+    `users`.`username`,
+    `comments`.`comment_text`,
+    `comments`.`crated_at`
+FROM
+    `users`
+    INNER JOIN `comments` ON `users`.`id` = `comments`.`users_id`;
+
+SELECT
+    *
+FROM
+    `users`
+    LEFT JOIN `comments` ON `users`.`id` = `comments`.`users_id`;
+
+SELECT
+    *
+FROM
+    `users`
+    RIGHT JOIN `comments` ON `users`.`id` = `comments`.`users_id`;
