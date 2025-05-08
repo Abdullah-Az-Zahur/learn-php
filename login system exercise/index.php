@@ -1,3 +1,8 @@
+<?php
+require_once 'includes/config_session.inc.php';
+require_once 'includes/signup_view.inc.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,14 +19,18 @@
         <input type="password" name="pwd" id="" placeholder="Password" required>
         <button type="submit" name="submit">Login</button>
     </form>
-    
+
     <h3>Sign Up</h3>
-    <form action="includes/signup.inc.php" method="post">
-        <input type="text" name="username" placeholder="User Name">
-        <input type="password" name="pwd" placeholder="Password">
-        <input type="email" name="email" placeholder="E-Mail">
+    <form action="includes/signup.inc.php" method="POST">
+        <?php
+        signup_input();
+        ?>
         <button type="submit">Sign Up</button>
     </form>
+
+    <?php
+    check_signup_errors();
+    ?>
 </body>
 
 </html>
