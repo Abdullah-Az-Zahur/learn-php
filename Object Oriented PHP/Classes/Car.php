@@ -4,7 +4,7 @@ class Car
 {
     private $brand;
     private $color;
-    public $vehicleType = 'car';
+    // private $vehicleType = 'car';
 
     // constructor   
     public function __construct($brand, $color = "none")
@@ -13,6 +13,30 @@ class Car
         $this->color = $color;
     }
 
+    // Getter and Setter methods
+    public function getBrand()
+    {
+        return $this->brand;
+    }
+
+    public function setBrand($brand)
+    {
+        return $this->brand = $brand;
+    }
+    public function getColor()
+    {
+        return $this->color;
+    }
+
+    public function setColor($color)
+    {
+        $allowedColors = ['red', 'blue', 'green', 'yellow', 'black', 'white'];
+        if (in_array($color, $allowedColors)) {
+            $this->color = $color;
+        }
+    }
+
+    // Method
     public function getCarInfo()
     {
         return "Brand : $this->brand , Color : $this->color ";
