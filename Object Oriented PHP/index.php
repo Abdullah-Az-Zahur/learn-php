@@ -7,7 +7,13 @@
 </head>
 <body>
     <?php 
-    
+    require_once 'Classes/Car.php';
+
+    $car01 = new Car("Volvo", "red");
+    echo $car01->vehicleType;
+    echo "<br>";
+    echo $car01->getCarInfo();
+
     ?>
 </body>
 </html>

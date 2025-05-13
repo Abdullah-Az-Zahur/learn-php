@@ -19,9 +19,9 @@ class Car
     }
 }
 
-$car01 = new Car("Volvo", "red");
-$car02 = new Car("BMW");
+// $car01 = new Car("Volvo", "red");
+// $car02 = new Car("BMW");
 
-echo $car01->getCarInfo();
-echo "<br>";
-echo $car01->vehicleType;
+// echo $car01->getCarInfo();
+// echo "<br>";
+// echo $car01->vehicleType;
